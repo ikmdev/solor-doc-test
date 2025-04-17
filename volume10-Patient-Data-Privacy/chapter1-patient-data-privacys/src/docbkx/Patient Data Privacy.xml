@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.1">
+    <title>Patient Data Privacy</title>
+    <section>
+        <title>RWD Introduction</title>
+        <para>The following chapters explore real world data (RWD) (data collected from patients)
+            and how it’s application in various fields of healthcare can affect patient care. This
+            book has presented thus far the current state of data interoperability and how and
+            integrated knowledge management environment can enable seamless translation of data from
+            one system to the next. This collection of chapters includes aims to shed light on
+            topics across the healthcare spectrum from patient data privacy to emergency
+            preparedness and how the application of Integrated Knowledge Management (IKM) can
+            enhance the use of data in these fields. These topics revolve around the singular goal
+            of harnessing the power of real time data to inform decision making. The power of can
+            impact decision making, from medical ethics to policy formation, and can enhance patient
+            care and quality in the long run. </para>
+    </section>
+    <section>
+        <title>Important of Patient Data Privacy</title>
+        <para>Patient data privacy refers to patients’ legal protection of their personal health
+            information by healthcare providers. All healthcare professionals must protect the
+            confidentiality and integrity of patients’ health information, while simultaneously
+            providing patients access to their data, including medical histories, test results,
+            treatments, and other personal information collected during patient interactions.
+            Patient data privacy stems from the branch of medical ethics that focuses on
+            doctor-patient confidentiality and is critical for building trust and ensuring patients
+            feel confident disclosing important information about their health. As well as having
+            access to their data, patients also have the right to correct any errors in their record
+            and to allow others to access their health data. These rights are protected both by the
+            medical code of ethics and the law, with violations leading to legal penalties. Several
+            laws exist in the United States and abroad to advance patient data privacy, including
+            the following: </para>
+        <orderedlist>
+            <listitem>
+                <para>Health Insurance Portability and Accountability Act (HIPAA) (United States):
+                    Protects the confidentiality, integrity, and accessibility of health
+                    information. HIPAA provides patients with a legal right to access and receive
+                    copies of their personal health data upon request and is broken down into
+                    Privacy, Security, and Breach Notification Rules [1]:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para><emphasis role="bold">Privacy Rule:</emphasis> The Privacy portion of
+                            HIPAA dictates that health care providers and health plans must provide
+                            access to protected health information (PHI) in “designated record
+                            sets”. These record sets are maintained by the provider and contain all
+                            information collected or stored by the healthcare entity, including
+                            paper records, data in electronic systems, remote/archived information,
+                            or data pertaining to where the PHI originated. It also ensures that
+                            patients can access and edit their records if they find an error. [2]
+                        </para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Security Rule:</emphasis> Healthcare providers
+                            must enact safeguards to protect PHI and ensure that PHI data is not
+                            improperly disclosed. Several measures including access control tools,
+                            encryption, and audit trails are types of security measures that can be
+                            built into systems containing PHI. </para>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="bold">Breach Rule:</emphasis> Federal law requires
+                            doctors, hospitals, and other health care providers to notify patients
+                            and the Secretary of Health and Human Services if a breach of PHI
+                            security occurs. If a breach affects more than 500 residents of a state
+                            or jurisdiction, the health care provider must also notify prominent
+                            media outlets serving the state or jurisdiction. </para>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+        
+            <listitem>
+                <para>21st Century Cures Act Information Blocking Rule: Prohibits health information
+                    technology vendors from blocking exchange of health information or restricting
+                    patient access to such information. The information blocking rule within this
+                    act is of particular importance to patients because it includes provisions
+                    ensuring that patients can electronically access all their electronic health
+                    information (EHI), structured and/or unstructured, at no cost, and with the
+                    application of their choice. Patients have the recourse to report information
+                    blocking by healthcare systems and other vendors. [3-4] </para>
+            </listitem>
+            <listitem>
+                <para>Coronavirus Aid, Relief, and Economic Security Act: Advanced data privacy for
+                    patients’ Substance Use Disorder (SUD) records and mandated that Health and
+                    Human Services (HHS) issue guidance during the COVID-19 Pandemic regarding
+                    sharing patients’ protected health information (PHI). [5] </para>
+            </listitem>
+            <listitem>
+                <para>General Data Protection Regulation (GDPR): An EU policy that safeguards all
+                    personal data including healthcare data. It grants patients’ rights over their
+                    data and mandates healthcare organizations provide data protection measures.
+                    This policy extends beyond the EU and protects EU citizens wherever they are
+                    globally. [6-7] Several key principles outline the GDPR approach to data
+                    protection: </para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Lawfulness, fairness, and transparency </para>
+                    </listitem>
+                    <listitem>
+                        <para>Purpose limitation </para>
+                    </listitem>
+                    <listitem>
+                        <para>Data minimization </para>
+                    </listitem>
+                    <listitem>
+                        <para>Accuracy </para>
+                    </listitem>
+                    <listitem>
+                        <para>Storage limitation </para>
+                    </listitem>
+                    <listitem>
+                        <para>Integrity and confidentiality </para>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+        </orderedlist>
+    </section>
+    <section>
+        <title>Patient Data Privacy and IKM</title>
+        <para>Integrated Knowledge Management (IKM) does not handle or store individual patient records, and therefore does not
+            directly have authority over the security or dissemination of these records. IKM is a
+            contributed knowledge management application that will serve as a quality care driver to
+            improve healthcare data quality and support the downstream accuracy of patient
+            treatments and public health decisions. The contributed IKM application provides a space
+            for healthcare knowledge to be managed in a single centralized area and improves
+            clinical support systems to help healthcare providers. While IKM does not directly
+            handle or store individual patient records, it plays a vital role in preserving the
+            integrity and quality of healthcare data that are transferred within and between systems
+            in the healthcare labyrinth. </para>
+        <section>
+            <title>Health Insurance Portability and Accountability Act (HIPAA) v. GDPR and Patient
+                Data Privacy</title>
+            <para>HIPAA is a law designed specifically to protect individuals’ medical information
+                while GDPR is a broader regulation that encompasses protection of various types of
+                personal data, including health data. However, both laws protect an individual’s
+                right to the safe and secure handling of their personal information and are designed
+                to protect an individual’s privacy. </para>
+            <para>HIPAA rules only apply to covered entities including health care providers, health
+                plans, and healthcare clearinghouses. Below are examples of each covered entity
+                [8]:</para>
+            <orderedlist>
+                <listitem>
+                    <para>Healthcare provider: doctors, clinics, chiropractors, nursing homes,
+                        pharmacies</para>
+                </listitem>
+                <listitem>
+                    <para>Health plans: health insurance companies, Health Maintenance Organizations
+                        (HMOs), company health plans, Medicare/Medicaid</para>
+                </listitem>
+                <listitem>
+                    <para>Healthcare clearinghouse: entities that process nonstandard health
+                        information received from another entity into a standard. </para>
+                </listitem>
+            </orderedlist>
+            <para>GDPR rules apply to “Controllers” and “Processors”. Controllers are typically the
+                same as HIPAA Covered Entities, and generally <emphasis role="italic"
+                    >collect</emphasis> personal information, whereas a Processor is similar to the
+                HIPAA business associate and usually <emphasis role="italic">processes</emphasis>
+                personal information. Unlike HIPAA, GDPR has extraterritorial reach to locations
+                outside of the EU where EU persons personal information is in use. </para>
+            <para>Most relevant to IKM is the GDPR rules that extend extraterritorial reach to
+                personal data “processors” in the United States when the controller is in the EU,
+                and has heightened protections for data concerning health, genetics, or biometrics.
+                US healthcare providers can satisfy the GDPR security requirements for electronic
+                personal data by complying with the HIPAA Security Rule or by following the security
+                framework of the National Institute of Standards and Technology (NIST) (from which
+                the HIPAA Security Rule is based). </para>
+            <para>Although IKM does not qualify under HIPAA as a covered entity, nor under GDPR as a
+                controller or processor, IKM values patient data privacy and upholds the highest
+                security standards. [9]</para>
+        </section>
+    </section>
+    <section>
+        <title>Understanding Different Entities and Their Roles in Patient Data Privacy </title>
+        <para>Systematized Nomenclature of Medicine Clinical Terms® (SNOMED CT®) and Logical
+            Observation Identifiers Names and Codes® (LOINC®) are similar to IKM as they do not
+            directly handle patient data nor collect any PHI. Below are SNOMED CT® and LOINC®’s
+            commitment to data privacy:</para>
+        <section>
+            <title>SNOMED CT®</title>
+            <para>SNOMED CT®’s statement on data privacy [10]:</para>
+            <para>SNOMED CT® itself doesn't directly handle patient data privacy. However, it
+                contributes indirectly to patient data privacy by providing a standard language for
+                clinical data. SNOMED International Services provides a detailed description of
+                Personal Data processed for the purposes of Analytics, Contacting the User, Hosting
+                and other uses. The privacy policy also provides details of an individual’s rights
+                to their data and how to access and control personal information, and even includes
+                a point of contact for questions specifically concerning privacy. </para>
+        </section>
+        <section>
+            <title>LOINC®</title>
+            <para>As LOINC's privacy policy states, LOINC does not collect any personal health
+                information. LOINC® is a catalog of measurements that includes laboratory tests and
+                clinical measures, that are not limited to vital signs and anthropometric measures,
+                and standardized survey instruments. LOINC® also contains codes for the collection
+                types for these items, such as panels, forms, and documents. [11]</para>
+        </section>
+    </section>
+    <section>
+        <title>Conclusion</title>
+        <para>Patient data privacy is an important aspect of delivering safe and effective
+            healthcare and is protected by HIPAA and other laws. The European Union’s General Data
+            Privacy regulation ushered in an era of stringent and protective data privacy standards
+            and have even influenced new policies, such as the California Consumer Privacy Act
+            (CCPA). [12] As we navigate the complexities of data privacy regulations, our team
+            remain committed to protecting patient data and patient privacy. Though not directly
+            governed by HIPAA or GDPR, we believe patient data privacy should remain at the
+            forefront of our operations, reinforcing our commitment to quality healthcare.</para>
+    </section>
+    <section>
+        <title>References</title>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para>HIPAA Guide. HIPAA Updates [Internet]. Available from: <link
+                            xlink:href="https://www.hipaaguide.net/hipaa-updates/"
+                            >https://www.hipaaguide.net/hipaa-updates/</link></para>
+                </listitem>
+                <listitem>
+                    <para>U.S. Department of Health &amp; Human Services. Privacy, Security, and
+                        Electronic Health Records [Internet]. Washington (DC): HHS;. Available from:
+                            <link
+                            xlink:href="https://www.hhs.gov/hipaa/for-professionals/privacy/index.html"
+                            >https://www.hhs.gov/hipaa/for-professionals/privacy/index.html</link></para>
+                </listitem>
+                <listitem>
+                    <para>21st Century Cures Act Information Blocking Rule" [Internet]. Available
+                        from: <link
+                            xlink:href="https://oig.hhs.gov/reports-and-publications/featured-topics/information-blocking/"
+                        /></para>
+                </listitem>
+                <listitem>
+                    <para>Office of the National Coordinator for Health Information Technology
+                        (ONC). Information Blocking [Internet]. Available from: <link
+                            xlink:href="https://www.healthit.gov/topic/information-blocking"
+                            >https://www.healthit.gov/topic/information-blocking</link></para>
+                </listitem>
+                <listitem>
+                    <para>Congress. Care Act [Internet]. Washington, DC: Congress; 2020. Available
+                        from: <link
+                            xlink:href="https://www.congress.gov/bill/116th-congress/house-bill/748"
+                            >https://www.congress.gov/bill/116th-congress/house-bill/748</link></para>
+                </listitem>
+                <listitem>
+                    <para>GDPR.eu. General Data Protection Regulation (GDPR) [Internet]. Available
+                        from: <link xlink:href="https://gdpr.eu/what-is-gdpr"
+                            >https://gdpr.eu/what-is-gdpr</link></para>
+                </listitem>
+                <listitem>
+                    <para>GDPR Advisor. GDPR Compliance in the Healthcare Industry: Protecting
+                        Patient Data [Internet]. Available from: <link
+                            xlink:href="https://www.gdpr-advisor.com/gdpr-compliance-in-the-healthcare-industry-protecting-patient-data/"
+                            >https://www.gdpr-advisor.com/gdpr-compliance-in-the-healthcare-industry-protecting-patient-data/</link></para>
+                </listitem>
+                <listitem>
+                    <para>U.S. Department of Health &amp; Human Services. Covered Entities and
+                        Business Associates [Internet]. Available from: <link
+                            xlink:href="https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html"
+                            >https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html</link></para>
+                </listitem>
+                <listitem>
+                    <para>The National Law Review. Does GDPR Regulate Clinical Care Delivery for US
+                        Health Care Providers [Internet]. Available from:
+                        https://www.natlawreview.com/article/does-gdpr-regulate-clinical-care-delivery-us-health-care-providers#:~:text=Unlike
+                        the HIPAA Privacy Rule which makes obtaining,another lawful basis for
+                        processing the Personal Data.</para>
+                </listitem>
+                <listitem>
+                    <para>Iubenda. Privacy Policy [Internet]. Italy: iubenda; Available from: <link
+                            xlink:href="https://www.iubenda.com/privacy-policy/46600952"
+                            >https://www.iubenda.com/privacy-policy/46600952</link></para>
+                </listitem>
+                <listitem>
+                    <para>LOINC. Privacy Policy [Internet]. Available from: <link
+                            xlink:href="https://loinc.org/privacy-policy/"
+                            >https://loinc.org/privacy-policy/</link>
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Deloitte. CCPA Compliance and Readiness [Internet]. Available from:
+                        https://www2.deloitte.com/us/en/pages/advisory/articles/ccpa-compliance-readiness.html</para>
+                </listitem>
+            </orderedlist>
+        </para>
+    </section>
+</chapter>

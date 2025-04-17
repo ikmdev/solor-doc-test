@@ -292,40 +292,12 @@
       </plugins>
    </reporting>
   <modules>
-      <module>volumes/volume1</module>
+     <module>book</module>
+     <module>book/chapter1</module>
+     <module>volume1</module>
+     <module>volume1/chapter1</module>
      <module>doc-logging</module>
-     <module>docbook-customization</module>
-      <!-- <module>anf-ballot-submission</module>
-      <module>tinkar-doc</module>
-      <module>appendices</module> -->
-      <!-- <module>volumes</module>
-      <module>docbook-customization</module>
-      <module>doc-logging</module>
-      <module>bibliography-db</module>
-      <module>citation-editor-plugin</module> -->
-      <!-- <module>bibliography-db</module>
-      <module>cem-cimi</module>
-      <module>cimi</module>
-      <module>clin-obs-modeling</module>
-      <module>clinical-data-elements</module>
-      <module>design</module>
-      <module>foundation</module>
-      <module>implementation</module>
-      <module>isaacs-komet-abridged</module>
-      <module>isaacs-komet-compendium</module>
-      <module>kbs-future-architecture</module>
-      <module>kbs-roadmap</module>
-      <module>post-coordination-implementation</module>
-      <module>principles</module>
-      <module>quantifying-negation</module>
-      <module>solor</module>
-      <module>terms-glossary</module>
-      <module>transformation-language</module>
-      <module>negation</module>
-      <module>citation-editor-plugin</module>
-      <module>hl7-cimi-anf</module>
-      <module>hl7-anf-ballot</module>
-      <module>user-tool-doc</module> -->
+     <module>docbook-customization</module> 
    </modules>
    <profiles>
       <profile>
@@ -351,7 +323,7 @@
                   </executions>
                   <configuration>
                      <executable>/Applications/XEP/xep</executable>
-                     <workingDirectory>${project.basedir}/src/docbkx</workingDirectory>
+                     <workingDirectory>${project.basedir}/src/main/resources/</workingDirectory>
                      <successCodes>0,1</successCodes>
                      <arguments>
                         <argument>-fo</argument>

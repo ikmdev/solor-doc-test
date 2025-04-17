@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Intro</title>
+    <section>
+        <title>Purpose</title>
+        <para><anchor xml:id="Toc183349659"/>Scaling an open-source integrated knowledge management
+            tool is essential to ensure it can effectively support growing user bases and knowledge
+            data volumes, thereby improving knowledge sharing and interoperability. This document is
+            an update to a previously submitted deliverable that serves as a summary of findings for
+            best practices and potential methodologies to describe how the development of Integrated
+            Knowledge Management (IKM) will be scaled to a large open-source community while
+            maintaining functional integrity and encouraging new users to contribute within a shared
+            authoring environment. As this effort progresses, these findings will evolve as we
+            continue to understand the requirements, priorities, and needs of IKM and its
+            users.</para>
+        <para/>
+        <section>
+            <title>ddd</title>
+        </section>
+    </section>
+</chapter>

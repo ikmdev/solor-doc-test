@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Logical Nesting</title>
+    <section>
+        <title>Introduction</title>
+        <figure>
+            <title>Example of Compositional Grammar with a nested laterality</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/definitional_logicalNesting_00.svg" scalefit="1" width="100%" contentdepth="100%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <para>A Nested Expression is an expression that is defined within another expression, the
+            enclosing expression. Due to simple recursive <link
+                xlink:href="https://en.wikipedia.org/wiki/Scope_(programming)">scope</link><footnote><para>https://en.wikipedia.org/wiki/Scope_(programming)</para></footnote> rules, a
+            Nested Expression is itself invisible outside of its immediately enclosing expression.
+            The nesting is theoretically possible to any ideas of depth, although only a few levels
+            are normally used in practice. Nested Expressions have been a part of SNOMED CT
+            post-coordinated expressions for years and are able to be represented as a part of the
+            compositional grammar. </para>
+        <para>However, SNOMED International is not currently permitting the use of nesting outside
+            of post-coordinated expressions. The rationale as stated in the <link
+                xlink:href="https://docs.google.com/document/d/1tqNEA6S4fEF4fgj15OPabYA2E0VTz8epxvRRwczKizQ/edit#heading=h.yijdvy700v01"
+                >SNOMED CT Logic Profile Enhancements document</link><footnote><para>https://docs.google.com/document/d/1tqNEA6S4fEF4fgj15OPabYA2E0VTz8epxvRRwczKizQ/edit#heading=h.yijdvy700v01</para></footnote> is due to two main reasons
+            currently limiting the use of nested expressions:</para>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para>Lack of support in RF2</para>
+                </listitem>
+                <listitem>
+                    <para>Potential for arbitrary levels of nesting</para>
+                </listitem>
+            </orderedlist>
+        </para>
+        <para>The ability to have Nested Expressions applied to pre-coordinated concepts
+            in SNOMED CT would be beneficial to fully define concepts where the values
+            for attributes are currently not represented as pre-coordinated concepts,
+            for example lateralized body structures. Since creating pre-coordinated
+            concepts to cover every aspect of medicine would lead to combinatorial
+            explosion, Nested Expressions allow for the creation of a wide variety of
+            concepts to supplement content that is currently missing from the
+            international release. However, since nested expressions can be recursive,
+            there need to be some limitations on the amount of expressivity allowed to
+            keep content creation using nested expressions understandable and
+            reproducible and to keep quality checks simple. Although Nested Expressions
+            are easily represented in the compositional grammar syntax and OWL, they
+            would require major changes to the SNOMED CT RF2 structure.</para>
+        <para>The purpose of this study is to identify a sample of expressions that are not nested
+            and do not require nesting and a sample of expressions that should be nested and where a
+            model for nesting is proposed. </para>
+    </section>
+    <section>
+        <title>Pharmaceutical / Biological Concepts</title>
+        <para>During our work on partonomy, the need to use Nested Expressions to
+            fully define products in two instances was identified. The first instance involved concepts that did
+            not have a precoordinated concept available to fully define drugs that were representing
+            packages that contain multiple drugs. The second set of concepts represented a powder
+            that is packaged separately from the solution used to mix prior to use. The model below
+            represents the pharmacy model tested, and it has not been updated to the
+            new drug model SNOMED International released in January 2018.</para>
+        <figure>
+            <title>Example of starter pack that contains multiple tablets. Diagram contains the current SCT definition (top) and the updated definition (bottom) using partonomy with a nested expression.</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/definitional_logicalNesting_01.svg" scalefit="1" width="100%" contentdepth="100%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <figure>
+            <title>Example of an injection powder that is packaged separate from the solvent. Diagram contains the current SCT definition (top) and the updated definition (bottom) using partonomy with a nested expression.</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/definitional_logicalNesting_02.svg" scalefit="1" width="100%" contentdepth="100%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+    </section>
+    <section>
+        <title>Findings and Procedures Involving Laterality</title>
+        <para>Our work on identifying Findings and Procedures that incorrectly use laterality has
+            identified a set of concepts that are not currently modeled correctly due to a
+            lateralized body structure not existing as a precoordinated concept. Rather than add
+            these concepts to an extension or submit them for addition, they could easily use nested
+            expressions to represent the missing body structure concepts that have a laterality
+            attribute assigned to them.</para>
+        <figure>
+            <title>Current definition of Chronic deep venous thrombosis of femoral veins of both lower extremities (disorder) where laterality is not correctly defined.</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/definitional_logicalNesting_03.svg" scalefit="1" width="100%" contentdepth="100%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <figure>
+            <title>Updated definition of Chronic deep venous thrombosis of femoral veins of both lower extremities (disorder) where laterality is represented as a nested expression.</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="images/definitional_logicalNesting_04.svg" scalefit="1" width="100%" contentdepth="100%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+    </section>
+    <section>
+        <title>Recommendations</title>
+        <para>Support for Nested Expressions in the international and national releases would
+            require major changes to the RF2 specification and are not a part of the recommended
+            Logic Profile Enhancements. In addition, there must be constraints on the ability to
+            model Nested Expressions to ensure errors are not introduced due to the ability to
+            infinitely Nest Expressions. While Nested Expressions are not supported at the
+            international and national level due to distribution issues, there is a definite benefit
+            for including them in local extensions. </para>
+        <para>Using Nested Expressions to represent missing lateralized anatomy concepts will cut
+            down the need to request new body structure concepts or temporarily creating new
+            concepts in local extensions that will have to be reconciled with each
+            international/national release. Representation of package concepts using Nested
+            Expressions was the chosen method rather than creating new concepts in an extension.
+            However, these concepts would be much better suited as a pre-coordinated concept in the
+            international or national release as they have the potential to be used for data
+            recording or retrieval. Any further uses of nesting outside of laterality would need to
+            be evaluated and constrained to ensure that modeling can be easily checked for
+            completeness and consistency. Outside of the two use cases tested for Nested
+            Expressions, one could make modifications to findings and procedures that are used as
+            values for defining relationships. However, in most cases these concepts would probably
+            be better suited as pre-coordinated concepts.</para>
+    </section>
+    <section>
+        <title>Resulting Artifacts</title>
+        <para>Two Reference Sets were created:(1) those
+            reviewed concepts where nesting could be used to represent both the product and
+            laterality nesting and (2) those reviewed concepts that would not need nesting.</para>
+    </section>
+    <section>
+        <title>Additional Issues</title>
+        <para>When modeling the Pharmaceutical/Biological Product hierarchy, a model developed by
+            Solor developers was used to test concrete domains. SNOMED International has since
+            started utilizing the new drug model in the January 2018 international release, which
+            will make the Solor developer model obsolete once the SNOMED model is implemented. The
+            new SNOMED CT drug model will allow for the addition of more fully defined content
+            including the addition of more values to represent concepts that include units of
+            presentation like cartridges. With the new SNOMED model, removal of definitions added
+            during previous work has begun, where some were partially modeled via an automated
+            update. For example:<itemizedlist>
+                <listitem>
+                    <para>318166002 |Bendrofluazide+potassium 2.5mg/7.7Mmol m/r tablet
+                        (product)|</para>
+                </listitem>
+                <listitem>
+                    <para>318171009 |Bendrofluazide+potassium 2.5mg/8.4Mmol m/r tablet
+                        (product)|</para>
+                </listitem>
+                <listitem>
+                    <para>134499006 |Budesonide + formoterol fumarate 100/6mcg breath-actuated dry
+                        powder inhaler (product)|</para>
+                </listitem>
+                <listitem>
+                    <para>134498003 |Budesonide+eformoterol fumarate 200/6mcg breath-actuated dry
+                        powder inhaler (product)|</para>
+                </listitem>
+                <listitem>
+                    <para>318165003 |Bumetanide+potassium 500mcg/7.7Mmol m/r tablet
+                        (product)|</para>
+                </listitem>
+                <listitem>
+                    <para>447089002 |Amlodipine 5mg + hydrochlorothiazide 25mg + olmesartan
+                        medoxomil 40mg tablet (product)|</para>
+                </listitem>
+            </itemizedlist></para>
+        <para>In the Pharmaceutical/Biological Product hierarchy, allergy kits that are
+            represented as separate concepts were identified and should potentially be considered duplicates:</para>
+        <para>
+            <itemizedlist>
+                <listitem>
+                    <para>358640003 Silver birch allergy initial kit (product)</para>
+                </listitem>
+                <listitem>
+                    <para>358641004 Silver birch allergy maintenance kit (product)</para>
+                </listitem>
+                <listitem>
+                    <para>346734001 Timothy grass allergy initial kit (product)</para>
+                </listitem>
+                <listitem>
+                    <para>346754000 Timothy grass allergy maintenance kit (product)</para>
+                </listitem>
+                <listitem>
+                    <para>346735000 Treemix allergy initial kit (product)</para>
+                </listitem>
+                <listitem>
+                    <para>346755004 Treemix allergy maintenance kit (product)</para>
+                </listitem>
+            </itemizedlist>
+        </para>
+    </section>
+</section>

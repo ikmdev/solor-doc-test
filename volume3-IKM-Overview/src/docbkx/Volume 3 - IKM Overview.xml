@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <info>
+        <title>Integrated Knowledge Management (IKM) Volume 3</title>
+        <subtitle>Version 2 - Last Updated 1/31/2024</subtitle>
+        </info>
+    <part>
+        <title>IKM Overview</title>
+        <xi:include href="../../../volume3-ikm-overview/chapter1-ikm-overview/src/docbkx/Integrated%20Knowledge%20Management.xml"/>
+    </part>
+    <part>
+        <title>Current State of IKM</title>
+        <xi:include href="../../../volume3-ikm-overview/chapter2-1.2.2-version/src/docbkx/1.2.2.xml"/>
+        <xi:include
+            href="../../../volume3-ikm-overview/chapter3-techn-coding-hosting/src/docbkx/Current%20KM%20Technologies,%20Industry%20Coding%20Standards,%20and%20KM%20Hosting%20Options%20for%20Volume%203.xml"/>
+    </part>
+    <part>
+        <title>Ethical Imperatives in Public Health and Healthcare</title>
+    <xi:include href="../../../volume3-ikm-overview/chapter4-ethical-consideration/src/docbkx/Ethical%20Consideration2.xml"/>
+    </part>    
+    <part>
+        <title>Development of IKM</title>
+        <xi:include href="../../../volume3-ikm-overview/chapter5-framework-consideration/src/docbkx/Framework%20Considerations%20for%20Knowledge%20Management%20(KM)%201.2.3%20for%20Volume%203.xml"/>
+    </part>
+</book>

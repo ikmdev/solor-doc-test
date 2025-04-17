@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <info>
+        <title>Integrated Knowledge Management (IKM) Book</title>
+        <subtitle>Version 3 - Last Updated 01/14/2025</subtitle>
+    </info>
+    <part>
+        <title>Introduction</title>
+        <xi:include href="Book%20Content/Book%20Introduction.xml"/>
+    </part>
+    <part>
+        <title xml:id="BookBackground">Background</title>
+        <xi:include href="Book%20Content/Book%20Background.xml"/>
+        <xi:include href="Book%20Content/Book%20sof-current-state.xml"/>
+    </part>
+    <part>
+        <title>IKM Overview</title>
+        <xi:include href="Book%20Content/Book%20Integrated%20Knowledge%20Management.xml"/>
+        <xi:include href="Book%20Content/Book%201.2.2.xml"/>
+        <?oxy_comment_start author="rgeorgacopoulos" timestamp="20240625T162627-0500" comment="We can add teh solor-foundation.xml here as part of the ikm overview and write a 2 sentence intro to solor? "?>
+    </part>
+    <part>
+        <title>Foundational Architecture</title>
+        <xi:include
+            href="../../../volume4-tinkar-ballot/chapter1-introduction-tinkar/src/docbkx/introduction.xml"/>
+        <xi:include
+            href="../../../volume4-tinkar-ballot/chapter2-business-requirements/src/docbkx/business-requirements.xml"/>
+        <xi:include
+            href="../../../volume4-tinkar-ballot/chapter3-tinkar-reference-model/src/docbkx/tinkar-reference-model.xml"/>
+        <xi:include
+            href="../../../volume4-tinkar-ballot/chapter4-implications/src/docbkx/implications.xml"/>
+        <xi:include
+            href="../../../volume4-tinkar-ballot/chapter5-conclusion/src/docbkx/conclusion.xml"/>
+        <xi:include href="../../../volume4-tinkar-ballot/chapter6-foundational-architecture/src/docbkx/Foundational-Architecture.xml"/>
+        <xi:include href="../../../volume4-tinkar-ballot/chapter7-references/src/docbkx/Volume%204%20-%20References.xml"/>
+    </part>
+    <part>
+        <title>Terminology Knowledge</title>
+        <xi:include href="Book%20Content/Book%20terminology-intro.xml"
+            xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Book%20Content/Book%20Terminology-Knowledge.xml"
+            xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </part>
+    <part>
+        <title>Statement Model</title>
+        <chapter>
+            <title>Statement Model Principles</title>
+            <xi:include href="statement-intro-begin.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+            <xi:include href="statement-intro-patterns.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        </chapter>
+        <chapter>
+            <title>Statement Historical Implementations</title>
+            <xi:include href="statement-openehr.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+            <xi:include href="statement-clinical-input-form.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        </chapter>
+        <xi:include
+            href="../../../volume6-anf-ballot/chapter1-introduction-anf/src/docbkx/introduction.xml"/>
+        <xi:include
+            href="../../../volume6-anf-ballot/chapter2-anf-reference-model/src/docbkx/anf-reference-model.xml"/>
+        <xi:include
+            href="../../../volume6-anf-ballot/chapter3-anf-clinical-statements/src/docbkx/anf-clinical-statements.xml"/>
+        <xi:include
+            href="../../../volume6-anf-ballot/chapter4-analysis-normal-form/src/docbkx/analysis-normal-form.xml"/>
+        <xi:include
+            href="../../../volume6-anf-ballot/chapter5-transformation/src/docbkx/transformation.xml"/>
+        <xi:include
+            href="../../../volume6-anf-ballot/chapter6-precision/src/docbkx/precision.xml"/>
+        <xi:include
+            href="../../../volume6-anf-ballot/chapter7-conclusion/src/docbkx/conclusion.xml"/>
+        <xi:include
+            href="../../../volume6-anf-ballot/chapter8-bibliography/src/docbkx/bibliography.xml"
+        />
+    </part>
+    <part>
+        <title>Assertional Knowledge</title>
+        <xi:include href="../../../volume5-knowledge-layers/chapter2-solor-assertional/src/docbkx/SOLOR-assertional.xml"/>
+    </part>
+    <part>
+        <title>Procedural Representation</title>
+        <xi:include href="../../src/docbkx/Book%20Content/Book%20Procedural.xml"/>
+    </part>
+    <part>
+        <title>Ecosystem</title>
+        <xi:include href="Book%20Content/Book%20Ecosystem%20combined.xml"/>
+        <xi:include
+            href="Book%20Content/Book%20Summary%20of%20Findings%20-%20Managing%20the%20Best%20Practice%20for%20Open-Source%20Communities.xml"/>
+        <xi:include
+            href="Book%20Content/Book%20Evaluation%20of%20Current%20SNOMED%20CT%20LOINC%20Collaboration.xml"/>
+        <xi:include href="Book%20Content/Book%204.1.1.xml"/>
+    </part>
+    <part>
+        <title><?oxy_comment_start author="rgeorgacopoulos" timestamp="20240715T101026-0500" comment="add transition sentence about exploring current stae km solutions and current state environment, best practices, lessons learned and more from other efforts"?>Knowledge
+            Management <?oxy_comment_end?>Environment (Komet)</title>
+        <xi:include
+            href="Book%20Content/Book%20Framework%20Considerations%20for%20Knowledge%20Management%20(KM)%201.2.3.xml"/>
+        <xi:include
+            href="Book%20Content/Book%20Playbook%20of%20Current%20Knowledge%20Management%20Technologies,%20Industry%20Coding%20Standards,%20and%20Knowledge%20Management%20Hosting%20Options.xml"
+            ><?oxy_comment_end?></xi:include>
+        <xi:include
+            href="Book%20Content/Book%20Summary%20of%20Findings%20%E2%80%93%20Functional%20and%20Non-Functional%20Issues%20Related%20to%20Knowledge%20Management%20Proof%20of%20Concept.xml"/>
+        <xi:include href="../../../volume8-komet-user-guide/chapter1-komet-user-guides/src/docbkx/Komet-User-Guide.xml"/>
+    </part>
+    <part>
+        <title>Use Cases and Summary of Findings</title>
+        <xi:include href="../../../volume7-use-cases/chapter3-use-case/src/docbkx/Use-Case-Chapter.xml"/>
+        <xi:include
+            href="../../../volume7-use-cases/chapter2-summary-of-findings/src/docbkx/Summary%20of%20Findings%20%E2%80%93%20RWE%20Search%20and%20Query%20Methods.xml"/>
+    </part>
+    <part>
+        <title>Real World Applications</title>
+        <xi:include href="../../../volume10-patient-data-privacy/chapter1-patient-data-privacys/src/docbkx/Patient%20Data%20Privacy.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Book%20Content/Book%20Healthcare%20Data%20Management.xml"
+            xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Book%20Content/Book%20Healthcare%20Quality%20Improvement.xml"
+            xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
+        <xi:include
+            href="Book%20Content/Book%20Global%20Health%20and%20International%20Collaboration.xml"
+            xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Book%20Content/Book%20Emergency%20Preparedness.xml"
+            xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="Book%20Content/Book%20ROI.xml" xmlns:xi="http://www.w3.org/2001/XInclude"
+        />
+    </part>
+    <part>
+        <title>Appendix</title>
+        <xi:include href="../../../volume-appendix/quick-reference-guide/src/docbkx/Quick%20Reference%20Guide.xml"/>
+    </part>
+</book>

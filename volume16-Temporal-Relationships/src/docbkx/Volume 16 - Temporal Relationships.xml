@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <info>
+        <title>Integrated Knowledge Management (IKM) Volume 16</title>
+        <subtitle>Version 1 - Last Updated 09/30/2024</subtitle>
+    </info>
+    <part>
+        <title>Introduction to Temporal Relationships</title>
+        <xi:include href="../../chapter1-understanding-temporal-relationships/src/docbkx/Understanding%20Temporal%20Relationships%20in%20Healthcare_Enhancing%20Patient%20Care%20through%20Data%20Driven%20Insights.xml"/>
+    </part>
+    <part>
+        <title>Advanced Examination of Temporal Relationships</title>
+        <xi:include href="../../chapter2-temporal-description-reasonings/src/docbkx/Temporal%20and%20Description%20Reasoning%20in%20Healthcare_Advanced%20Applications%20and%20Integrations.xml"/>
+    </part>
+        </book>

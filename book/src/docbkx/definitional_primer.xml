@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Description Logic Primer</title>
+    
+    
+    <section xml:id="section_aad44d58-84cd-40d4-af58-cb3e06af98e2">
+        <title>Description Logic</title>
+        <para>DL consist of a family of formal knowledge representation language that implements
+            mathematical logic to support formal expressions, reasoning, and formal proof. It is
+            typically more expressive than propositional logic, which only deals with fixed truth
+            values, which may or may not be true
+            (<?oxy_comment_start author="steph" timestamp="20190305T155849-0700" comment="Should be &quot;e.g.&quot; instead of &quot;i.e.&quot;  Same for example below for books or temperature." id="cpw_mqc_1hb" flag="done"?><?oxy_comment_start author="erhwang" timestamp="20190307T083716-0700" comment="fixed" parentID="cpw_mqc_1hb" flag="done" mid="1"?>e.g.
+            <?oxy_comment_end mid="1"?><?oxy_comment_end?>"it is raining"), and cannot have
+            variables to represent 'things' (e.g. books or temperature). However, it is less
+            expressive than first-order logic, which assumes the world contains Objects, Relations
+            and Functions, allows variables and can quantify over non-logical objects. The main
+            design principle of Description Logics is its balance between expressivity and
+            computational complexity to suit different applications, with medical ontology modeling
+            being one use case. </para>
+        <para>DLs provides a way to model the domain by providing three entities: concepts, roles
+            and individual names: <itemizedlist>
+                <listitem>
+                    <para>Concepts - represents sets of individuals</para>
+                </listitem>
+                <listitem>
+                    <para>Roles - relations between concepts</para>
+                </listitem>
+                <listitem>
+                    <para>Names - individual name to represent concepts</para>
+                </listitem>
+            </itemizedlist>
+        </para>
+        <para>Instead of fully describing the state of a domain, as one would with a database, DLs
+            contain axioms, or statements. These axioms capture partial knowledge about the
+            situation that the ontology is describing, and there may be many different states of the
+            world that are consistent with the ontology<footnote>
+                <para>Krötzsch, M., Simančík, F., Horrocks, I. (2013). A Description Logic Primer.
+                    Retrieved from https://arxiv.org/pdf/1201.4089.pdf</para>
+            </footnote>. With a proper modeling of formal semantics, DLs allows humans and computer
+            systems to unambiguously exchange ontologies without losing their meaning, and also
+            provides the capability to infer (reason) additional information from given facts in
+            order compute a conclusion. </para>
+
+        <section>
+            <title>Definitional Operators</title>
+            <para>Once statements or axioms are established, a set of syntax and properties are used
+                for further expressivity. Below is an overview of common DL syntax and properties
+                seen in the medical domain, and major design considerations for Solor. </para>
+            <section xml:id="section_8c35c127-885e-4150-b5e2-61a8b52781ae">
+                <title>Conjunction &#x2227;</title>
+                <para>Example: A &#x2227; B (A and B)</para>
+                <para>"A and B" is true only if A is true and B is true. This syntax is also known as intersection.</para>
+            </section>
+            <section xml:id="section_0dbbbabf-43d9-4c54-bb3b-a2486ead3066">
+                <title>Disjointness &#x2228;</title>
+                <para>Example: A &#x2228; B (A or B)</para>
+                <para>"A or B" is true if A is true, or if B is true, or if both A and B are true. This syntax is also known as union.</para>
+            </section>
+            <section xml:id="section_e8b2a42a-7161-4f40-bc25-c7ba0811177e">
+                <title>Reflexive roles</title>
+                <para>Every element is related to itself. For example, X = X</para>
+            </section>
+            <section xml:id="section_196f1d52-7e7e-49f6-9cf6-d41e0d2d8922">
+                <title>Role inclusions &#x2282;</title>
+                <para>Example: A &#x2282; B (all A are B)</para>
+                <para>Role inclusions allow expression of role hierarchies, transitive roles and
+                    right identities.</para>
+            </section>
+            <section xml:id="section_da6bb31b-f469-4672-adbd-f3a3f0260f9c">
+                <title>Necessary axioms</title>
+                <para>Condition A is said to be necessary for Condition B, if falsity of A
+                    guarantees the falsity of B. </para>
+                <para>In other words, if A then B: B is necessary for A because A cannot be true
+                    unless B is true. </para>
+                <para>
+                    Example:
+                    <itemizedlist>
+                        <listitem>
+                            <para>A = Human being is alive</para>
+                        </listitem>
+                        <listitem>
+                            <para>B = Air is necessary for human being to breathe</para>
+                        </listitem>
+                        <listitem>
+                            <para>If "Human being is alive", then "human being has air to breathe"</para>
+                        </listitem>
+                    </itemizedlist>     
+                </para>
+            </section>
+            <section xml:id="section_3bb1da79-8716-4162-8438-ab1c2a157e51">
+                <title>Sufficient axioms</title>
+                <para>Condition A is sufficient for Condition B, if and only if truth of A
+                    guarantees the truth of B. </para>
+                <para>Continuing with the 'necessary' example, air by itself does not guarantee a
+                    human being is alive since other factors are required, such as water. In other
+                    words, there are several conditions that are required for a human being to be
+                    alive, and a sufficient set of these conditions must be present in order for a
+                    human being to be alive. </para>
+            </section>
+            <section xml:id="section_9a15e626-7aa5-49b3-af6d-acd39143393d">
+                <title>Defining relationships</title>
+                <para>Role relationships are represented as existential restrictions. These are used
+                    to logically represent a concept by establishing a relationship with other
+                    concepts. This will be further elaborated in the
+                    <?oxy_comment_start author="steph" timestamp="20190306T100949-0700" comment="Insert &quot;the&quot; here, before &quot;Solor&quot;." id="s4x_vqc_1hb" flag="done" mid="3"?><?oxy_comment_start author="erhwang" timestamp="20190307T083955-0700" comment="fixed" parentID="s4x_vqc_1hb" flag="done"?>Solor<?oxy_comment_end?><?oxy_comment_end mid="3"?>
+                    Definitional Knowledge chapter of the Definitional section.</para>
+            </section>
+            <section xml:id="section_898d51d6-ab3a-4d63-8922-2c64d1dc3beb">
+                <title>Quantities</title>
+                <para>Concrete domains are a construct that can define new classes by specifying
+                    restrictions on attributes that have literal values (as opposed to relationships
+                    to other concepts). The binary operators, equal to, greater than, greater than
+                    or equal to, less than, and less than or equal to, can be used in concrete
+                    domain expressions, and literal values can be integers, floating point numbers,
+                    string literals, and dates. <footnote>
+                        <para>SNOROCKET 2.0 Concurrent Domains and Concurrent Classification</para>
+                    </footnote></para>
+                <para>Concrete domains are used to model quantities in the definition of concepts,
+                    such as defining how much ibuprofen may be in a medication tablet. This is
+                    further examined in the Topics of Concern chapter of the Definitional
+                    Section.</para>
+            </section>
+            <section>
+                <title>EL++</title>
+                <para>Since Solor is based on SNOMED, and SNOMED utilizes a subset of EL++, a brief
+                    introduction to this topic appears to be necessary. </para>
+                <para>According to <link xlink:href="https://www.w3.org/2007/OWL/wiki/EL"
+                    >w3.org</link><footnote><para>https://www.w3.org/2007/OWL/wiki/EL</para></footnote>, EL++ is a lightweight description logic that admits sound
+                    and complete reasoning in polytime. It is a syntactic fragment of OWL 1.1 DL. In
+                    particular, it shares the semantics of OWL 1.1 DL. The design goals behind EL++
+                    were two-fold: <itemizedlist>
+                        <listitem>
+                            <para>capture the expressive power that is used by large-scale
+                                ontologies from practical applications</para>
+                        </listitem>
+                        <listitem>
+                            <para>have polytime reasoning problems, in particular classification and
+                                instance checking</para>
+                        </listitem>
+                    </itemizedlist>
+                </para>
+                <para>As of 2011<footnote><para>https://en.wikipedia.org/wiki/SNOMED_CT</para>
+                </footnote>, SNOMED CT content limits itself to a subset of the EL++ formalism, restricting itself to
+                    the following operators: 
+                    <itemizedlist>
+                        <listitem>
+                            <para>Top, bottom</para>
+                        </listitem>
+                        <listitem>
+                            <para>Primitive roles and concepts with asserted
+                                parent(s) for each</para>
+                        </listitem>
+                        <listitem>
+                            <para>Concept definition and conjunction but NOT disjunction or
+                                representation of
+                                <?oxy_comment_start author="steph" timestamp="20190306T102859-0700" comment="Should this be changed to representation of absence?" id="ghz_drc_1hb" flag="done" mid="8"?><?oxy_comment_start author="erhwang" timestamp="20190307T084216-0700" comment="fixed" parentID="ghz_drc_1hb" flag="done"?>absence<?oxy_comment_end?><?oxy_comment_end mid="8"?></para>
+                        </listitem>
+                        <listitem>
+                            <para>Role hierarchy but not role composition Domain and range constraints</para>
+                        </listitem>
+                        <listitem>
+                            <para>Existential but not universal restriction</para>
+                        </listitem>
+                        <listitem>
+                            <para>A restricted form of role inclusion
+                                axiom (xRy ^ ySz => xRz)</para>
+                        </listitem>
+                        <listitem>
+                            <para>The logic will be extended in the near future to
+                                include General Concept Inclusion Axioms</para>
+                        </listitem>
+                    </itemizedlist>   
+                       </para>
+            </section>
+            
+            
+        </section>
+    
+
+    </section>
+          
+    
+    <section xml:id="section_913ac530-33db-42cc-bcf1-73fc29283537">
+        <title>Terminology Layer Exclusions</title>
+        <para>While computation of language representation is an advanced area, there are certain
+            scenarios that are highly complex and which we humans either cannot consistently explain
+            how a machine should interpret or there just is no way to consistently create the
+            content in a manner which a machine can deduce its true meaning. This section describes
+            such scenarios, which would create known undesired effects, or will be handled
+            separately from normal description logic operations.</para>
+        <section xml:id="section_f26a133b-3726-4ba5-90c9-93df878218c2">
+            <title><?oxy_comment_start author="steph" timestamp="20190306T102924-0700" comment="Should this be change to representation of absence?" id="drx_vrc_1hb" flag="done" mid="10"?><?oxy_comment_start author="erhwang" timestamp="20190307T084732-0700" comment="Represetation of absence is kind of Logical Negation. Logical Negation is a known &apos;phrase&apos; in Description Logic. Since this section is addressing what Solor WON&apos;T be addressing, I think it is best to leave it as Logical negation &amp; write a bit on it when this section is expanded with verbiage." parentID="drx_vrc_1hb" flag="done" mid="11"?><?oxy_comment_start author="steph" timestamp="20190402T154919-0600" comment="Okay" flag="done"?>Logical<?oxy_comment_end?><?oxy_comment_end mid="11"?><?oxy_comment_end mid="10"?>
+                negation</title>
+            <para>Logical Negation, or "Representation of absence" as it is described throughout
+                this document, is the notion of how to describe something that is not present. The
+                complexity of this topic is described in [reference
+                definitional_conceptAnalysis.xml, section 1.2.1] and illustrates why it is difficult
+                to represent this notion of something that is not present. Furthermore, it describes
+                how current content in terminologies is inconsistently represented. The topic of
+                absence representation is described in greater detail in [reference
+                absence_representation_requirement.xml]. </para>
+            <para>Therefore, content deemed as "absence" content are identified, which is described
+                in [reference definitional_conceptAnalysis.xml, section 1.2]. The identification of
+                this set of content would allow a system to handle the "absence" computation, when
+                available, in a manner that is separate and more specialized from typical
+                description logic operations.</para>
+        </section>
+        <section xml:id="section_6b1213dd-2975-48a7-b943-daad9d7685a2">
+            <title>Measurement</title>
+            <para>Measurement is a complex topic that can be both addressed through the statement
+                model as well as the terminology knowledge. Since measurements can be much better
+                represented in the statement model and to a much more granular level, measurement is
+                a topic that was determined should not be handled by normal description
+                logic.</para>
+        </section>
+    </section>
+    
+</section>
