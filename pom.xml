@@ -295,8 +295,8 @@
      <module>book</module>
 <!--      <module>book/chapter1</module>
      <module>volume1</module>
-     <module>volume1/chapter1</module>
-     <module>doc-logging</module> -->
+     <module>volume1/chapter1</module> -->
+     <module>doc-logging</module>
      <module>docbook-customization</module> 
    </modules>
    <profiles>
