@@ -4,6 +4,7 @@
       <groupId>sh.isaac.komet.doc</groupId>
       <artifactId>isaacs-komet-doc</artifactId>
       <version>0.13-SNAPSHOT</version>
+      <relativePath>../pom.xml</relativePath>
    </parent>
    <artifactId>docbook-customization</artifactId>
 
