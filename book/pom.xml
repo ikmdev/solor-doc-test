@@ -3,6 +3,7 @@
       <groupId>sh.isaac.komet.doc</groupId>
       <artifactId>isaacs-komet-doc</artifactId>
       <version>0.13-SNAPSHOT</version>
+      <relativePath>../pom.xml</relativePath>
    </parent>
    <modelVersion>4.0.0</modelVersion>
 
@@ -10,9 +11,6 @@
    <name>book</name>
    <description>Description of book models for Analysis Normal Form and Clinical Input Form</description>
    <packaging>pom</packaging>
-   <modules>
-      <module>docbook-customization</module>
-   </modules>
    <!-- <profiles>
       <profile>
          <id>volume1</id>
