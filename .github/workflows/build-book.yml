@@ -24,6 +24,10 @@ jobs:
       # - name: Build Project
       #   run: mvn clean install -U -D'maven.build.cache.enabled=false'
 
+      - name: Build Docbook Customization
+        working-directory: ./docbook-customization
+        run: mvn clean install -U -D'maven.build.cache.enabled=false'
+
       - name: Build Docbook
         working-directory: ./book
         run: mvn clean install -U -D'maven.build.cache.enabled=false'
