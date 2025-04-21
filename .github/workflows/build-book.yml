@@ -25,6 +25,6 @@ jobs:
         run: mvn clean install -U -D'maven.build.cache.enabled=false'
 
       - name: Build Docbook
-        working-directory: ./book
+        working-directory: ./volume1-Introduction
         run: mvn clean install -U -D'maven.build.cache.enabled=false'
         
