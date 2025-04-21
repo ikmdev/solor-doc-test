@@ -27,15 +27,15 @@
         <xi:include
             href="../../../volume4-Tinkar-Ballot/chapter1-introduction-tinkar/src/docbkx/Introduction.xml"/>
         <xi:include
-            href="../../../volume4-tinkar-ballot/chapter2-business-requirements/src/docbkx/business-requirements.xml"/>
+            href="../../../volume4-Tinkar-Ballot/chapter2-business-requirements/src/docbkx/business-requirements.xml"/>
         <xi:include
-            href="../../../volume4-tinkar-ballot/chapter3-tinkar-reference-model/src/docbkx/tinkar-reference-model.xml"/>
+            href="../../../volume4-Tinkar-Ballot/chapter3-tinkar-reference-model/src/docbkx/tinkar-reference-model.xml"/>
         <xi:include
-            href="../../../volume4-tinkar-ballot/chapter4-implications/src/docbkx/implications.xml"/>
+            href="../../../volume4-Tinkar-Ballot/chapter4-implications/src/docbkx/implications.xml"/>
         <xi:include
-            href="../../../volume4-tinkar-ballot/chapter5-conclusion/src/docbkx/conclusion.xml"/>
-        <xi:include href="../../../volume4-tinkar-ballot/chapter6-foundational-architecture/src/docbkx/Foundational-Architecture.xml"/>
-        <xi:include href="../../../volume4-tinkar-ballot/chapter7-references/src/docbkx/Volume%204%20-%20References.xml"/>
+            href="../../../volume4-Tinkar-Ballot/chapter5-conclusion/src/docbkx/conclusion.xml"/>
+        <xi:include href="../../../volume4-Tinkar-Ballot/chapter6-foundational-architecture/src/docbkx/Foundational-Architecture.xml"/>
+        <xi:include href="../../../volume4-Tinkar-Ballot/chapter7-references/src/docbkx/Volume%204%20-%20References.xml"/>
     </part>
     <part>
         <title>Terminology Knowledge</title>
@@ -59,21 +59,21 @@
                 xmlns:xi="http://www.w3.org/2001/XInclude"/>
         </chapter>
         <xi:include
-            href="../../../volume6-anf-ballot/chapter1-introduction-anf/src/docbkx/introduction.xml"/>
+            href="../../../volume6-ANF-Ballot/chapter1-introduction-anf/src/docbkx/introduction.xml"/>
         <xi:include
-            href="../../../volume6-anf-ballot/chapter2-anf-reference-model/src/docbkx/anf-reference-model.xml"/>
+            href="../../../volume6-ANF-Ballot/chapter2-anf-reference-model/src/docbkx/anf-reference-model.xml"/>
         <xi:include
-            href="../../../volume6-anf-ballot/chapter3-anf-clinical-statements/src/docbkx/anf-clinical-statements.xml"/>
+            href="../../../volume6-ANF-Ballot/chapter3-anf-clinical-statements/src/docbkx/anf-clinical-statements.xml"/>
         <xi:include
-            href="../../../volume6-anf-ballot/chapter4-analysis-normal-form/src/docbkx/analysis-normal-form.xml"/>
+            href="../../../volume6-ANF-Ballot/chapter4-analysis-normal-form/src/docbkx/analysis-normal-form.xml"/>
         <xi:include
-            href="../../../volume6-anf-ballot/chapter5-transformation/src/docbkx/transformation.xml"/>
+            href="../../../volume6-ANF-Ballot/chapter5-transformation/src/docbkx/transformation.xml"/>
         <xi:include
-            href="../../../volume6-anf-ballot/chapter6-precision/src/docbkx/precision.xml"/>
+            href="../../../volume6-ANF-Ballot/chapter6-precision/src/docbkx/precision.xml"/>
         <xi:include
-            href="../../../volume6-anf-ballot/chapter7-conclusion/src/docbkx/conclusion.xml"/>
+            href="../../../volume6-ANF-Ballot/chapter7-conclusion/src/docbkx/conclusion.xml"/>
         <xi:include
-            href="../../../volume6-anf-ballot/chapter8-bibliography/src/docbkx/bibliography.xml"
+            href="../../../volume6-ANF-Ballot/chapter8-bibliography/src/docbkx/bibliography.xml"
         />
     </part>
     <part>
@@ -107,9 +107,9 @@
     </part>
     <part>
         <title>Use Cases and Summary of Findings</title>
-        <xi:include href="../../../volume7-use-cases/chapter3-use-case/src/docbkx/Use-Case-Chapter.xml"/>
+        <xi:include href="../../../volume7-Use-Cases/chapter3-use-case/src/docbkx/Use-Case-Chapter.xml"/>
         <xi:include
-            href="../../../volume7-use-cases/chapter2-summary-of-findings/src/docbkx/Summary%20of%20Findings%20%E2%80%93%20RWE%20Search%20and%20Query%20Methods.xml"/>
+            href="../../../volume7-Use-Cases/chapter2-summary-of-findings/src/docbkx/Summary%20of%20Findings%20%E2%80%93%20RWE%20Search%20and%20Query%20Methods.xml"/>
     </part>
     <part>
         <title>Real World Applications</title>
