@@ -7,7 +7,7 @@
    <modelVersion>4.0.0</modelVersion>
 
    <artifactId>volume1-introduction</artifactId>
-   <name>volume1-introduction</name>
+   <name>volume1-Introduction</name>
    <description>Description of Volumes models for Analysis Normal Form and Clinical Input Form</description>
    <packaging>pom</packaging>
    <!-- <profiles>
