@@ -7,7 +7,7 @@
     </parent>
     <artifactId>chapter1-introduction</artifactId>
     <packaging>pom</packaging>
-    <name>chapter1-Introduction</name>
+    <name>chapter1-introduction</name>
 
     <dependencies>
         <!-- Chapter-specific dependencies -->
