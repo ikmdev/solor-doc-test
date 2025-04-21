@@ -22,6 +22,7 @@
    <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
       <slf4j.version>2.0.13</slf4j.version>
+      <module-name>book</module-name>
       <!--<project.version>1.0-SNAPSHOT</project.version>-->
    </properties>
 
@@ -292,14 +293,39 @@
       </plugins>
    </reporting>
   <modules>
-<!--      <module>book</module> -->
-<!--      <module>book/chapter1</module>
-     <module>volume1</module>
-     <module>volume1/chapter1</module> -->
      <module>doc-logging</module>
-     <module>docbook-customization</module> 
+     <module>docbook-customization</module>
+     <module>${module-name}</module> 
    </modules>
    <profiles>
+
+      <profile>
+         <id>all-modules</id>
+         <activation>
+            <activeByDefault>false</activeByDefault>
+         </activation>
+         <modules>
+            <module>doc-logging</module>
+            <module>docbook-customization</module> 
+            <module>book</module>
+            <module>volume1-Introduction</module>
+            <module>volume2-Background</module>
+            <module>volume3-IKM-Overview</module>
+            <module>volume4-Tinkar-Ballot</module>
+            <module>volume5-Knowledge-Layers</module>
+            <module>volume6-ANF-Ballot</module>
+            <module>volume7-Use-Cases</module>
+            <module>volume8-Komet-User-Guide</module>
+            <module>volume9-Wisdom-of-Crowds</module>
+            <module>volume10-Patient-Data-Privacy</module>
+            <module>volume11-Healthcare-Data-Management</module>
+            <module>volume12-Healthcare-Quality-Improvement</module>
+            <module>volume13-Global-Health-International-Collaboration</module>
+            <module>volume14-Emergency-Preparedness</module>
+            <module>volume15-return-investment</module>
+            <module>volume16-Temporal-Relationships</module>
+         </modules>
+      </profile>
       <profile>
          <id>xep-profile</id>
          <activation>
