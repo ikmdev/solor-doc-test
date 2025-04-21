@@ -1,4 +1,6 @@
-name: DocBook build
+name: DocBook Build
+
+run-name: DocBook Build -- ${{github.ref_name || github.head_ref}}
 
 on:
  push:
