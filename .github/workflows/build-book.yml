@@ -3,7 +3,7 @@ name: DocBook Build
 run-name: DocBook Build -- ${{github.ref_name || github.head_ref}}
 
 on:
- # push:
+ push:
  pull_request:
  workflow_dispatch:
 
@@ -12,7 +12,7 @@ env:
 
 jobs:
   build-job:
-    name: Build Job
+    name: Build Job -- 
     runs-on: ubuntu-24.04
     steps:
       - name: checkout repo
@@ -27,7 +27,7 @@ jobs:
       - name: Build Project
         run: mvn clean install -U -D'maven.build.cache.enabled=false'
 
-      - name: Build Docbook
+      - name: Build Selected Module -- 
         working-directory: ./volume1-Introduction
         run: mvn clean install -U -D'maven.build.cache.enabled=false'
         
