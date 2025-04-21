@@ -21,8 +21,8 @@ jobs:
          distribution: 'zulu' # See 'Supported distributions' for available options
          java-version: '23'
 
-      # - name: Build Project
-      #   run: mvn clean install -U -D'maven.build.cache.enabled=false'
+      - name: Build Project
+        run: mvn clean install -U -D'maven.build.cache.enabled=false'
 
       - name: Build Doc Logging
         working-directory: ./doc-logging
