@@ -11,7 +11,10 @@ on:
       description: 'choose modules to build'
       required: true
       default: 'book'
-      
+    module-volume1:
+       description: 'choose volumes to build'
+       required: false
+       
 env:
   title: volume1-Introduction
 
