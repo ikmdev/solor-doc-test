@@ -6,7 +6,12 @@ on:
  push:
  pull_request:
  workflow_dispatch:
-
+  inputs:
+    module:
+      description: 'choose modules to build'
+      required: true
+      default: 'book'
+      
 env:
   title: volume1-Introduction
 
