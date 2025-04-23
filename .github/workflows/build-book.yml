@@ -30,12 +30,7 @@ on:
         - volume15
         - volume16
 
-    mvn_goals:
-      description: 'Maven goals'
-      required: false
-      default: mvn clean install -U -D'maven.build.cache.enabled=false'
-       
-# env:
+  # env:
 #   title: volume1-Introduction
 
 jobs:
@@ -55,15 +50,10 @@ jobs:
       # - name: Build Project
       #   run: mvn clean install -U -D'maven.build.cache.enabled=false'
 
-      - name: Determine Module Path --
-        id: module
-        run: |
-             echo "module_path=${{ github.event.inputs.module }}" >>GITHUB_OUTPUT
 
       - name: Build Selected Module -- 
         run: |
-          echo "Building module: ${{ steps.module.outputs.module_path }}"
-          mvn - B ${{ github.event.inputs.mvn_goals }} -pl  "${{ steps.module.outputs.module_path }}" -am
-
+          echo "Building module: ${{ github.event.inputs.module }}"
+          mvn clean install -U -D'maven.build.cache.enabled=false' -D'module-name=${{ github.event.inputs.module }}'
         # working-directory: ./volume1-Introduction
         # run: mvn clean install -U -D'maven.build.cache.enabled=false'
