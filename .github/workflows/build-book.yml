@@ -50,7 +50,15 @@ jobs:
       - name: Build Project
         run: mvn clean install -U -D'maven.build.cache.enabled=false'
 
+      - name: Determine Module Path --
+        id: module
+        run: |
+             echo "module_path=${{ github.event.inputs.module }}" >>GITHUB_OUTPUT
+
       - name: Build Selected Module -- 
-        working-directory: ./volume1-Introduction
-        run: mvn clean install -U -D'maven.build.cache.enabled=false'
-        
+        run: |
+          echo "Building module: ${{ steps.module.outputs.module_path }}"
+          mvn - B ${{ github.event.inputs.mvn clean install -U -D'maven.build.cache.enabled=false' }} -p1  "${{ steps.module.outputs.module_path }}" -am
+
+        # working-directory: ./volume1-Introduction
+        # run: mvn clean install -U -D'maven.build.cache.enabled=false'
