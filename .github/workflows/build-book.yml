@@ -10,10 +10,13 @@ on:
     module:
       description: 'choose modules to build'
       required: true
-      default: 'book'
-    module-volume1:
-       description: 'choose volumes to build'
-       required: false
+      type: choice
+      options:
+        - book
+        - volume1
+        - volume2
+        - volume3
+    
        
 env:
   title: volume1-Introduction
