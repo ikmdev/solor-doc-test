@@ -1,6 +1,6 @@
 name: DocBook Build
 
-run-name: DocBook Build -- ${{github.ref_name || github.head_ref}}
+run-name: DocBook Build -- ${{ github.event.inputs.module }} -- ${{github.ref_name || github.head_ref}} 
 
 on:
 #  push:
@@ -35,7 +35,7 @@ on:
 
 jobs:
   build-job:
-    name: Build Job -- 
+    name: Build Job -- ${{ github.event.inputs.module }}
     runs-on: ubuntu-24.04
     steps:
       - name: checkout repo
@@ -51,7 +51,7 @@ jobs:
       #   run: mvn clean install -U -D'maven.build.cache.enabled=false'
 
 
-      - name: Build Selected Module -- 
+      - name: Build Selected Module -- ${{ github.event.inputs.module }}
         run: |
           echo "Building module: ${{ github.event.inputs.module }}"
           mvn clean install -U -D'maven.build.cache.enabled=false' -D'module-name=${{ github.event.inputs.module }}'
