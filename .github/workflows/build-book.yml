@@ -63,7 +63,7 @@ jobs:
       - name: Build Selected Module -- 
         run: |
           echo "Building module: ${{ steps.module.outputs.module_path }}"
-          mvn - B ${{ github.event.inputs.mvn_goals }} -p1  "${{ steps.module.outputs.module_path }}" -am
+          mvn - B ${{ github.event.inputs.mvn_goals }} -pl  "${{ steps.module.outputs.module_path }}" -am
 
         # working-directory: ./volume1-Introduction
         # run: mvn clean install -U -D'maven.build.cache.enabled=false'
