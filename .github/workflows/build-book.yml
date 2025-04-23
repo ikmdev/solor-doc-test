@@ -16,7 +16,19 @@ on:
         - volume1
         - volume2
         - volume3
-    
+        - volume4
+        - volume5
+        - volume6
+        - volume7
+        - volume8
+        - volume9
+        - volume10
+        - volume11
+        - volume12
+        - volume13
+        - volume14
+        - volume15
+        - volume16
        
 env:
   title: volume1-Introduction
