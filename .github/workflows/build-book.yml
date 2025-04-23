@@ -3,12 +3,35 @@ name: DocBook Build
 run-name: DocBook Build -- ${{github.ref_name || github.head_ref}}
 
 on:
- push:
- pull_request:
+#  push:
+#  pull_request:
  workflow_dispatch:
+  inputs:
+    module:
+      description: 'choose modules to build'
+      required: true
+      type: choice
+      options:
+        - book
+        - volume1
+        - volume2
+        - volume3
+        - volume4
+        - volume5
+        - volume6
+        - volume7
+        - volume8
+        - volume9
+        - volume10
+        - volume11
+        - volume12
+        - volume13
+        - volume14
+        - volume15
+        - volume16
 
-env:
-  title: volume1-Introduction
+  # env:
+#   title: volume1-Introduction
 
 jobs:
   build-job:
@@ -24,10 +47,13 @@ jobs:
          distribution: 'zulu' # See 'Supported distributions' for available options
          java-version: '23'
 
-      - name: Build Project
-        run: mvn clean install -U -D'maven.build.cache.enabled=false'
+      # - name: Build Project
+      #   run: mvn clean install -U -D'maven.build.cache.enabled=false'
+
 
       - name: Build Selected Module -- 
-        working-directory: ./volume1-Introduction
-        run: mvn clean install -U -D'maven.build.cache.enabled=false'
-        
+        run: |
+          echo "Building module: ${{ github.event.inputs.module }}"
+          mvn clean install -U -D'maven.build.cache.enabled=false' -D'module-name=${{ github.event.inputs.module }}'
+        # working-directory: ./volume1-Introduction
+        # run: mvn clean install -U -D'maven.build.cache.enabled=false'
