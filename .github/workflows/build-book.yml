@@ -35,8 +35,8 @@ on:
       required: false
       default: mvn clean install -U -D'maven.build.cache.enabled=false'
        
-env:
-  title: volume1-Introduction
+# env:
+#   title: volume1-Introduction
 
 jobs:
   build-job:
