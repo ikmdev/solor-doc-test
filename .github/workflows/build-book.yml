@@ -47,13 +47,8 @@ jobs:
          distribution: 'zulu' # See 'Supported distributions' for available options
          java-version: '23'
 
-      # - name: Build Project
-      #   run: mvn clean install -U -D'maven.build.cache.enabled=false'
-
-
       - name: Build Selected Module -- ${{ github.event.inputs.module }}
         run: |
           echo "Building module: ${{ github.event.inputs.module }}"
-          mvn clean install -U -D'maven.build.cache.enabled=false' -D'module-name=${{ github.event.inputs.module }}' \
-           -D'module-name=./${{ github.event.inputs.module }}'
+          mvn clean install -U -D'maven.build.cache.enabled=false' -D'module-name=${{ github.event.inputs.module }}'
        
