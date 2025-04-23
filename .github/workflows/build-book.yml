@@ -55,5 +55,4 @@ jobs:
         run: |
           echo "Building module: ${{ github.event.inputs.module }}"
           mvn clean install -U -D'maven.build.cache.enabled=false' -D'module-name=${{ github.event.inputs.module }}'
-        # working-directory: ./volume1-Introduction
-        # run: mvn clean install -U -D'maven.build.cache.enabled=false'
+       
