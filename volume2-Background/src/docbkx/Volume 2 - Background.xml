@@ -9,7 +9,7 @@
     </info>
     <part>
         <title>IKM Background</title>
-        <xi:include href="../../../volume2-background/chapter1-background/src/docbkx/Background - For Vol 2.xml"/>
-        <xi:include href="../../../volume2-background/chapter2-sof-current-state/src/docbkx/sof-current-state - For Vol 2.xml"/>
+        <xi:include href="../../../volume2-Background/chapter1-background/src/docbkx/Background - For Vol 2.xml"/>
+        <xi:include href="../../../volume2-Background/chapter2-sof-current-state/src/docbkx/sof-current-state - For Vol 2.xml"/>
     </part>
 </book>
