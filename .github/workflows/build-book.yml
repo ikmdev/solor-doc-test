@@ -14,24 +14,22 @@ on:
       options:
         - book
         - volume1-Introduction
-        - volume2
-        - volume3
-        - volume4
-        - volume5
-        - volume6
-        - volume7
-        - volume8
-        - volume9
-        - volume10
-        - volume11
-        - volume12
-        - volume13
-        - volume14
-        - volume15
-        - volume16
+        - volume2-Background
+        - volume3-IKM-Overview
+        - volume4-Tinkar-Ballot
+        - volume5-Knowledge-Layers
+        - volume6-ANF-Ballot
+        - volume7-Use_Cases
+        - volume8-Komet-User-Guide
+        - volume9-Wisdom-of-Crowds
+        - volume10-Patient-Data-Privacy
+        - volume11-Healthcare-Data-Management
+        - volume12-Healthcare-Quality-Management
+        - volume13-Global-Helth-International-Collaboration
+        - volume14-Emergency-Preparedness
+        - volume15-Return-Investment
+        - volume16-Temporal-Relationships
 
-  # env:
-#   title: volume1-Introduction
 
 jobs:
   build-job:
