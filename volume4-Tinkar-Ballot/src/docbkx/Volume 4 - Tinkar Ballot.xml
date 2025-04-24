@@ -10,7 +10,7 @@
     <part>
         <title>Foundational Architecture</title>
         <xi:include
-            href="../../../volume4-Tinkar-Ballot/chapter1-introduction-tinkar/src/docbkx/introduction.xml"/>
+            href="../../../volume4-Tinkar-Ballot/chapter1-introduction-tinkar/src/docbkx/Introduction.xml"/>
         <xi:include
             href="../../../volume4-Tinkar-Ballot/chapter2-business-requirements/src/docbkx/business-requirements.xml"/>
         <xi:include
