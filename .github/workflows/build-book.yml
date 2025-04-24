@@ -51,4 +51,10 @@ jobs:
         run: |
           echo "Building module: ${{ github.event.inputs.module }}"
           mvn clean install -U -D'maven.build.cache.enabled=false' -D'module-name=${{ github.event.inputs.module }}'
+
+      - name: upload Generated PDF -- ${{ github.event.inputs.module }}
+        uses: actions/upload-artifact@v3
+        with:
+         name: ${{ github.event.inputs.module }}-pdf
+         path: ${{ github.event.inputs.module }}/target/site/docbook/*.pdf
        
