@@ -322,7 +322,7 @@
             <module>volume12-Healthcare-Quality-Improvement</module>
             <module>volume13-Global-Health-International-Collaboration</module>
             <module>volume14-Emergency-Preparedness</module>
-            <module>volume15-Return-Investment</module>
+            <module>volume15-return-investment</module>
             <module>volume16-Temporal-Relationships</module>
          </modules>
       </profile>
