@@ -9,6 +9,6 @@
     </info>
     <part>
         <title>IKM Return on Investment (ROI)</title>
-        <xi:include href="../../../volume15-Return-Investment/chapter1-roi/src/docbkx/ROI.XML"/>
+        <xi:include href="../../../volume15-return-investment/chapter1-roi/src/docbkx/ROI.XML"/>
     </part>
 </book>
