@@ -9,7 +9,7 @@
     </info>
     <part>
         <title>ANF Ballot</title>
-        <xi:include href="../../../volume6-Anf-Ballot/chapter1-introduction-anf/src/docbkx/introduction.xml"/>
+        <xi:include href="../../../volume6-Anf-Ballot/chapter1-introduction-anf/src/docbkx/Introduction.xml"/>
         <xi:include href="../../../volume6-Anf-Ballot/chapter2-anf-reference-model/src/docbkx/anf-reference-model.xml"/>
         <xi:include
             href="../../../volume6-Anf-Ballot/chapter3-anf-clinical-statements/src/docbkx/anf-clinical-statements.xml"/>
