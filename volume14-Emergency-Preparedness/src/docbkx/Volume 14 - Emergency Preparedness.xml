@@ -10,5 +10,5 @@
     <part>
         <title>IKM and Emergency Disaster Response</title>
     </part>
-    <xi:include href="../../chapter1-er-preparedness/src/docbkx/Emergency%20Preparedness.xml"/>
+    <xi:include href="../../../volume14-Emergency-Preparedness/chapter1-er-preparedness/src/docbkx/Emergency%20Preparedness.xml"/>
 </book>

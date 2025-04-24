@@ -9,8 +9,8 @@
     </info>
     <part>
         <title>Use Cases</title>
-        <xi:include href="../../../volume7-use-cases/chapter1-4.1.1-version/src/docbkx/4.1.1.xml"/>
-        <xi:include href="../../../volume7-use-cases/chapter2-summary-of-findings/src/docbkx/Summary%20of%20Findings%20%E2%80%93%20RWE%20Search%20and%20Query%20Methods.xml"/>
-        <xi:include href="../../../volume7-use-cases/chapter3-use-case/src/docbkx/Use-Case-Chapter.xml"></xi:include>
+        <xi:include href="../../../volume7-Use-Cases/chapter1-4.1.1-version/src/docbkx/4.1.1.xml"/>
+        <xi:include href="../../../volume7-Use-Cases/chapter2-summary-of-findings/src/docbkx/Summary%20of%20Findings%20%E2%80%93%20RWE%20Search%20and%20Query%20Methods.xml"/>
+        <xi:include href="../../../volume7-Use-Cases/chapter3-use-case/src/docbkx/Use-Case-Chapter.xml"></xi:include>
     </part>
 </book>

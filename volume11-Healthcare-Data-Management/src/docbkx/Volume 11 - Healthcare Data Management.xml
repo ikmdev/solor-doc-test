@@ -9,6 +9,6 @@
     </info>
     <part>
         <title>Healthcare Data Management</title>
-        <xi:include href="../../../volume11-healthcare-data-management/chapter1-healthcare-data-mngt/src/docbkx/Healthcare%20Data%20Management.xml"/>
+        <xi:include href="../../../volume11-Healthcare-Data-Management/chapter1-healthcare-data-mngt/src/docbkx/Healthcare%20Data%20Management.xml"/>
     </part>
 </book>

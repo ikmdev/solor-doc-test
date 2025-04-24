@@ -9,10 +9,10 @@
     </info>
     <part>
         <title>Introduction to Temporal Relationships</title>
-        <xi:include href="../../chapter1-understanding-temporal-relationships/src/docbkx/Understanding%20Temporal%20Relationships%20in%20Healthcare_Enhancing%20Patient%20Care%20through%20Data%20Driven%20Insights.xml"/>
+        <xi:include href="../../../volume16-Temporal-Relationships/chapter1-understanding-temporal-relationships/src/docbkx/Understanding%20Temporal%20Relationships%20in%20Healthcare_Enhancing%20Patient%20Care%20through%20Data%20Driven%20Insights.xml"/>
     </part>
     <part>
         <title>Advanced Examination of Temporal Relationships</title>
-        <xi:include href="../../chapter2-temporal-description-reasonings/src/docbkx/Temporal%20and%20Description%20Reasoning%20in%20Healthcare_Advanced%20Applications%20and%20Integrations.xml"/>
+        <xi:include href="../../../volume16-Temporal-Relationships/chapter2-temporal-description-reasonings/src/docbkx/Temporal%20and%20Description%20Reasoning%20in%20Healthcare_Advanced%20Applications%20and%20Integrations.xml"/>
     </part>
         </book>

@@ -10,16 +10,16 @@
     <part>
         <title>Foundational Architecture</title>
         <xi:include
-            href="../../../volume4-tinkar-ballot/chapter1-introduction-tinkar/src/docbkx/introduction.xml"/>
+            href="../../../volume4-Tinkar-Ballot/chapter1-introduction-tinkar/src/docbkx/introduction.xml"/>
         <xi:include
-            href="../../../volume4-tinkar-ballot/chapter2-business-requirements/src/docbkx/business-requirements.xml"/>
+            href="../../../volume4-Tinkar-Ballot/chapter2-business-requirements/src/docbkx/business-requirements.xml"/>
         <xi:include
-            href="../../../volume4-tinkar-ballot/chapter3-tinkar-reference-model/src/docbkx/tinkar-reference-model.xml"/>
+            href="../../../volume4-Tinkar-Ballot/chapter3-tinkar-reference-model/src/docbkx/tinkar-reference-model.xml"/>
         <xi:include
-            href="../../../volume4-tinkar-ballot/chapter4-implications/src/docbkx/implications.xml"/>
+            href="../../../volume4-Tinkar-Ballot/chapter4-implications/src/docbkx/implications.xml"/>
         <xi:include
-            href="../../../volume4-tinkar-ballot/chapter5-conclusion/src/docbkx/conclusion.xml"/>
-        <xi:include href="../../../volume4-tinkar-ballot/chapter6-foundational-architecture/src/docbkx/Foundational-Architecture.xml"/>
+            href="../../../volume4-Tinkar-Ballot/chapter5-conclusion/src/docbkx/conclusion.xml"/>
+        <xi:include href="../../../volume4-Tinkar-Ballot/chapter6-foundational-architecture/src/docbkx/Foundational-Architecture.xml"/>
     </part>
-    <xi:include href="../../../volume4-tinkar-ballot/chapter7-references/src/docbkx/Volume%204%20-%20References.xml"/>
+    <xi:include href="../../../volume4-Tinkar-Ballot/chapter7-references/src/docbkx/Volume%204%20-%20References.xml"/>
 </book>

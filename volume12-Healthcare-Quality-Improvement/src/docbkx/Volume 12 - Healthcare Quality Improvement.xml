@@ -9,6 +9,6 @@
     </info>
     <part>
         <title>Healthcare Quality Improvement</title>
-        <xi:include href="../../../volume12-healthcare-quality-improvement/chapter1-healthcare-quality-improvements/src/docbkx/Healthcare%20Quality%20Improvement.xml"/>
+        <xi:include href="../../../volume12-Healthcare-Quality-Improvement/chapter1-healthcare-quality-improvements/src/docbkx/Healthcare%20Quality%20Improvement.xml"/>
     </part>
 </book>

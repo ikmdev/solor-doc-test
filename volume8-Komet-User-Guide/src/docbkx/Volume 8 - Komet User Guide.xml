@@ -9,6 +9,6 @@
     </info>
     <part>
         <title>Komet User Guide</title>
-        <xi:include href="../../../volume8-komet-user-guide/chapter1-komet-user-guides/src/docbkx/Komet-User-Guide.xml"/>
+        <xi:include href="../../../volume8-Komet-User-Guide/chapter1-komet-user-guides/src/docbkx/Komet-User-Guide.xml"/>
     </part>
 </book>

@@ -9,14 +9,14 @@
     </info>
     <part>
         <title>Terminology Knowledge</title>
-        <xi:include href="../../../volume5-knowledge-layers/chapter1-terminology-knowledge/src/docbkx/Terminology-Knowledge.xml"/>
+        <xi:include href="../../../volume5-Knowledge-Layers/chapter1-terminology-knowledge/src/docbkx/Terminology-Knowledge.xml"/>
     </part>
     <part>
         <title>Assertional Knowledge</title>
-        <xi:include href="../../../volume5-knowledge-layers/chapter2-solor-assertional/src/docbkx/SOLOR-assertional.xml"/>
+        <xi:include href="../../../volume5-Knowledge-Layers/chapter2-solor-assertional/src/docbkx/SOLOR-assertional.xml"/>
     </part>
     <part>
         <title>Procedural Knowledge</title>
-        <xi:include href="../../../volume5-knowledge-layers/chapter3-knar-procedural/src/docbkx/knart-procedural.xml"/>
+        <xi:include href="../../../volume5-Knowledge-Layers/chapter3-knar-procedural/src/docbkx/knart-procedural.xml"/>
     </part>
 </book>

@@ -11,5 +11,5 @@
         <title>Patient Data Privacy</title>
         
     </part>
-    <xi:include href="../../../volume10-patient-data-privacy/chapter1-patient-data-privacys/src/docbkx/Patient%20Data%20Privacy.xml"/>
+    <xi:include href="../../../volume10-Patient-Data-Privacy/chapter1-patient-data-privacys/src/docbkx/Patient%20Data%20Privacy.xml"/>
 </book>

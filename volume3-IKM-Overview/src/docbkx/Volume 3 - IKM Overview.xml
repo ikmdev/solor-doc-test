@@ -9,20 +9,20 @@
         </info>
     <part>
         <title>IKM Overview</title>
-        <xi:include href="../../../volume3-ikm-overview/chapter1-ikm-overview/src/docbkx/Integrated%20Knowledge%20Management.xml"/>
+        <xi:include href="../../../volume3-IKM-Overview/chapter1-ikm-overview/src/docbkx/Integrated%20Knowledge%20Management.xml"/>
     </part>
     <part>
         <title>Current State of IKM</title>
-        <xi:include href="../../../volume3-ikm-overview/chapter2-1.2.2-version/src/docbkx/1.2.2.xml"/>
+        <xi:include href="../../../volume3-IKM-Overview/chapter2-1.2.2-version/src/docbkx/1.2.2.xml"/>
         <xi:include
-            href="../../../volume3-ikm-overview/chapter3-techn-coding-hosting/src/docbkx/Current%20KM%20Technologies,%20Industry%20Coding%20Standards,%20and%20KM%20Hosting%20Options%20for%20Volume%203.xml"/>
+            href="../../../volume3-IKM-Overview/chapter3-techn-coding-hosting/src/docbkx/Current%20KM%20Technologies,%20Industry%20Coding%20Standards,%20and%20KM%20Hosting%20Options%20for%20Volume%203.xml"/>
     </part>
     <part>
         <title>Ethical Imperatives in Public Health and Healthcare</title>
-    <xi:include href="../../../volume3-ikm-overview/chapter4-ethical-consideration/src/docbkx/Ethical%20Consideration2.xml"/>
+    <xi:include href="../../../volume3-IKM-Overview/chapter4-ethical-consideration/src/docbkx/Ethical%20Consideration2.xml"/>
     </part>    
     <part>
         <title>Development of IKM</title>
-        <xi:include href="../../../volume3-ikm-overview/chapter5-framework-consideration/src/docbkx/Framework%20Considerations%20for%20Knowledge%20Management%20(KM)%201.2.3%20for%20Volume%203.xml"/>
+        <xi:include href="../../../volume3-IKM-Overview/chapter5-framework-consideration/src/docbkx/Framework%20Considerations%20for%20Knowledge%20Management%20(KM)%201.2.3%20for%20Volume%203.xml"/>
     </part>
 </book>
