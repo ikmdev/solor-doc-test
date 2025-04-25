@@ -12,6 +12,8 @@ on:
       required: true
       type: choice
       options:
+        - -- SELECT --
+        - All
         - book
         - volume1-Introduction
         - volume2-Background
@@ -30,12 +32,21 @@ on:
         - volume15-Return-Investment
         - volume16-Temporal-Relationships
 
+env:
+  MODULE: ${{github.event.inputs.module}}
+
 
 jobs:
   build-job:
     name: Build Job -- ${{ github.event.inputs.module }}
     runs-on: ubuntu-24.04
     steps:
+      - name: Fail if --SELECT-- chosen
+        if: env.MODULE == '-- SELECT --'
+        run: |
+          echo "Please pick a valid module"
+          exit 1
+
       - name: checkout repo
         uses: actions/checkout@v4
 
@@ -45,12 +56,24 @@ jobs:
          distribution: 'zulu' # See 'Supported distributions' for available options
          java-version: '23'
 
+      - name: Determine Choice
+        id: module_choice_arg
+        run: |
+          if [ "$CHOSEN_MODULE" == "All" ]; then
+            echo "BUILD_ARG=-Pall-modules" >> $GITHUB_OUTPUT
+          else
+            echo "BUILD_ARG=-D'module-name=${{ github.event.inputs.module }}' >> $GITHUB_OUTPUT
+          fi
+        env:
+          CHOSEN_MODULE: ${{env.MODULE}}
+
       - name: Build Selected Module -- ${{ github.event.inputs.module }}
         run: |
           echo "Building module: ${{ github.event.inputs.module }}"
-          mvn clean install -U -D'maven.build.cache.enabled=false' -D'module-name=${{ github.event.inputs.module }}'
+          mvn clean install -U -D'maven.build.cache.enabled=false' ${{steps.module_choice_arg.outputs.BUILD_ARG}}
 
-      - name: upload Generated PDF -- ${{ github.event.inputs.module }}
+      - name: Upload Generated PDF -- ${{ github.event.inputs.module }}
+        if: env.MODULE != 'All'
         uses: actions/upload-artifact@v4
         with:
          name: ${{ github.event.inputs.module }}-pdf
