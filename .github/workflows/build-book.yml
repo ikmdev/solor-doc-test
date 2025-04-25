@@ -62,7 +62,7 @@ jobs:
           if [ "$CHOSEN_MODULE" == "All" ]; then
             echo "BUILD_ARG=-Pall-modules" >> $GITHUB_OUTPUT
           else
-            echo "BUILD_ARG=-D'module-name=${{ github.event.inputs.module }}" >> $GITHUB_OUTPUT
+            echo "BUILD_ARG=-D'module-name=${{ github.event.inputs.module }}'" >> $GITHUB_OUTPUT
           fi
         env:
           CHOSEN_MODULE: ${{env.MODULE}}
