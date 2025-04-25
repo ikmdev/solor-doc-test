@@ -307,7 +307,7 @@
          <modules>
             <module>doc-logging</module>
             <module>docbook-customization</module> 
-            <module>book</module>
+            <!-- <module>book</module> -->
             <module>volume1-Introduction</module>
             <module>volume2-Background</module>
             <module>volume3-IKM-Overview</module>
